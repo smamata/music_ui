@@ -136,7 +136,47 @@ class _MusicState extends State<Music> {
                 ),
               ),
             ),
-          )
+          ),
+          Positioned(
+            top: 600,
+            left: 50,
+            child: Row(
+              children: [
+                Text(
+                  "See you see",
+                  style: TextStyle(
+                      color: Colors.blue.shade600,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 10),
+                ),
+                SizedBox(
+                  width: 5,
+                ),
+                Text(
+                  "you seem you everytime..",
+                  style: TextStyle(
+                      color: Colors.blue.shade200,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 10),
+                ),
+              ],
+            ),
+          ),
+          Positioned(
+            top: 620,
+            left: 110,
+            child: OutlinedButton(
+              style: ButtonStyle(),
+              onPressed: () {},
+              child: Text(
+                "See all lyrics",
+                style: TextStyle(
+                    color: Colors.blue.shade200,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 10),
+              ),
+            ),
+          ),
         ],
       ),
     );
