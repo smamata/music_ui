@@ -20,7 +20,7 @@ class _MusicState extends State<Music> {
         children: [
           Container(
             decoration: BoxDecoration(
-              color: Colors.blue.shade100,
+              color: Colors.blue.shade50,
             ),
           ),
           Positioned(
@@ -58,7 +58,7 @@ class _MusicState extends State<Music> {
             child: Container(
               height: 330,
               decoration: BoxDecoration(
-                  color: Colors.blue.shade100,
+                  color: Colors.blue.shade50,
                   borderRadius: BorderRadius.circular(26),
                   boxShadow: [
                     BoxShadow(
@@ -126,7 +126,7 @@ class _MusicState extends State<Music> {
                 radius: 180,
                 child: CircleAvatar(
                   radius: 175,
-                  backgroundColor: Colors.blue.shade100,
+                  backgroundColor: Colors.blue.shade50,
                   child: CircleAvatar(
                     radius: 140,
                     backgroundImage: AssetImage(
