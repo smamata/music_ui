@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:music_ui/lyric.dart';
 
 class Music extends StatefulWidget {
   const Music({Key? key}) : super(key: key);
@@ -10,6 +12,7 @@ class Music extends StatefulWidget {
 class _MusicState extends State<Music> {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -167,7 +170,12 @@ class _MusicState extends State<Music> {
             left: 110,
             child: OutlinedButton(
               style: ButtonStyle(),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Lyrics()),
+                );
+              },
               child: Text(
                 "See all lyrics",
                 style: TextStyle(
